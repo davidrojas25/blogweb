@@ -3,8 +3,8 @@
 <head>
     <style>
             body {
+                background-color: white 
                  
-                 background-image: url("images/WhittierWarriorsCrossCountry2020.png");
             }
             
             h1 {
@@ -23,21 +23,49 @@
                 margin-left: auto;
                 margin-right: auto;
               }
-            .header {
-                padding: 60px;
+            .hero-image {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/WhittierWarriorsCrossCountry2020.png");
+                height: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+              }  
+              .hero-text {
                 text-align: center;
-                background-image: url("images/WhittierWarriorsCrossCountry2020.png");
-                color: rgb(7, 0, 0);
-                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+              }
+              
+              .hero-text button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 10px 25px;
+                color: black;
+                background-color: #ddd;
+                text-align: center;
+                cursor: pointer;
+              }
+              
+              .hero-text button:hover {
+                background-color: #555;
+                color: white;
               }  
     </style>    
 <title>blog</title>
 </head>
 <body>
-        <div class="header">
-                <h1>WHITTIER WARRIORS</h1>
-                <h2>Youth Running</h2>
-              </div>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">WHITTIER WARRIORS</h1>
+          <p>Youth Running</p>
+          <button>More Info</button>
+        </div>
+      </div>
               
 <h1>This is my new site</h1>
 <img src="images/WhittierWarriorsCrossCountry2020.png" alt="whittierwarriors" align="middle" width="500" height="333">
